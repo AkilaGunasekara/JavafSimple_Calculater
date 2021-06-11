@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="300.0" style="-fx-background-color: #178ecb; -fx-opacity: 10; visibility: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="calexp" layoutX="3.0" layoutY="4.0" prefHeight="380.0" prefWidth="294.0" style="-fx-background-color: #949191;">
+         <children>
+            <Pane layoutX="15.0" layoutY="14.0" prefHeight="59.0" prefWidth="265.0" style="-fx-background-color: #b0b8b2; -fx-background-radius: 15; -fx-opacity: 20; -fx-border-color: #178ecb; -fx-border-radius: 15;">
+               <children>
+                  <Label id="label" fx:id="lab" layoutX="10.0" layoutY="-1.0" prefHeight="62.0" prefWidth="247.0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="38.0" layoutY="103.0" text=" Number 1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <TextField id="number1" fx:id="num1" alignment="CENTER" layoutX="119.0" layoutY="97.0" prefHeight="30.0" prefWidth="110.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <TextField id="number2" fx:id="num2" alignment="CENTER" layoutX="119.0" layoutY="138.0" prefHeight="25.0" prefWidth="110.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <Pane layoutX="37.0" layoutY="188.0" prefHeight="59.0" prefWidth="227.0" style="-fx-background-color: #787575; -fx-background-radius: 15; -fx-opacity: 20; -fx-border-color: #178ecb; -fx-border-radius: 15;">
+               <children>
+                  <Label id="label" fx:id="lab1" layoutX="65.0" prefHeight="62.0" prefWidth="149.0">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="calmultification" layoutX="121.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculatemultification" prefHeight="38.0" prefWidth="38.0" style="-fx-background-radius: 19;" text="*">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="Caladdition" layoutX="51.0" layoutY="198.0" mnemonicParsing="false" onAction="#caladdition" prefHeight="38.0" prefWidth="38.0" style="-fx-background-radius: 19;" text="+">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="caldivision" layoutX="210.0" layoutY="198.0" mnemonicParsing="false" onAction="#calculatedivision" prefHeight="38.0" prefWidth="38.0" style="-fx-background-radius: 19;" text="/">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="calreduce" layoutX="100.0" layoutY="198.0" mnemonicParsing="false" onAction="#calculatereduce" prefHeight="38.0" prefWidth="38.0" style="-fx-background-radius: 19;" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button id="ipad_d" fx:id="calsin" layoutX="27.0" layoutY="281.0" mnemonicParsing="false" onAction="#calsin" prefHeight="48.0" prefWidth="53.0" stylesheets="@../style.css" text="SIN">
+               <font>
+                  <Font size="4.0" />
+               </font></Button>
+            <Button id="ipad_d" fx:id="calexp" layoutX="220.0" layoutY="281.0" mnemonicParsing="false" onAction="#calexp" prefHeight="48.0" prefWidth="57.0" stylesheets="@../style.css" text="EXP">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button id="ipad_d" fx:id="caltan" layoutX="93.0" layoutY="281.0" mnemonicParsing="false" onAction="#calcos" prefHeight="48.0" prefWidth="52.0" stylesheets="@../style.css" text="COS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="ipad_d" fx:id="caltan" layoutX="155.0" layoutY="281.0" mnemonicParsing="false" onAction="#caltan" prefHeight="48.0" prefWidth="52.0" stylesheets="@../style.css" text="TAN">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="38.0" layoutY="144.0" text=" Number 2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
