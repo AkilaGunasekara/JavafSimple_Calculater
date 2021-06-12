@@ -28,8 +28,9 @@ public class Controller implements Initializable {
             lab.setText(String.valueOf(number1 + number2));
         }
         catch (Exception e){
-            num1.setText("Enter a Value");
-            num2.setText("Enter a Value");
+            num1.setText(num1.getText());
+            num2.setText(num1.getText());
+            lab.setText(" ");
         }
 
     }
@@ -42,8 +43,9 @@ public class Controller implements Initializable {
             lab.setText(String.valueOf(number1 - number2));
         }
         catch (Exception e){
-            num1.setText("Enter a Value");
-            num2.setText("Enter a Value");
+            num1.setText(num1.getText());
+            num2.setText(num1.getText());
+            lab.setText(" ");
         }
     }
 
@@ -57,8 +59,9 @@ public class Controller implements Initializable {
             lab.setText(String.valueOf(number1 * number2));
         }
         catch (Exception e){
-            num1.setText("Enter a Value");
-            num2.setText("Enter a Value");
+            num1.setText(num1.getText());
+            num2.setText(num1.getText());
+            lab.setText(" ");
         }
     }
     @FXML
@@ -70,13 +73,15 @@ public class Controller implements Initializable {
             lab.setText(String.valueOf(number1 / number2));
         }
         catch (Exception e){
-            num1.setText("Enter a Value");
-            num2.setText("Enter a Value");
+            num1.setText(num1.getText());
+            num2.setText(num1.getText());
+            lab.setText(" ");
         }
     }
     @FXML
     void calsin(ActionEvent event){
-        int number = Integer.parseInt(num1.getText());
+        double number = Integer.parseInt(num1.getText());
+        number = Math.toRadians(number);
         double sinvalue = Math.sin(number);
 
         lab.setText(String.valueOf(sinvalue));
@@ -84,28 +89,39 @@ public class Controller implements Initializable {
     }
     @FXML
     void calexp(ActionEvent event){
-        int number = Integer.parseInt(num1.getText());
-        double sinvalue = Math.exp(number);
+        double number = Integer.parseInt(num1.getText());
+        number = Math.toRadians(number);
+        double expvalue = Math.exp(number);
 
-        lab.setText(String.valueOf(sinvalue));
+        lab.setText(String.valueOf(expvalue));
 
     }
     @FXML
     void calcos(ActionEvent event){
-        int number = Integer.parseInt(num1.getText());
-        double sinvalue = Math.cos(number);
+        double number = Integer.parseInt(num1.getText());
+        number = Math.toRadians(number);
+        double cosvalue = Math.cos(number);
 
-        lab.setText(String.valueOf(sinvalue));
+        lab.setText(String.valueOf(cosvalue));
 
     }
     @FXML
     void caltan(ActionEvent event){
-        int number = Integer.parseInt(num1.getText());
+        double number = Integer.parseInt(num1.getText());
+        number = Math.toRadians(number);
+        double tanvalue = Math.tan(number);
+        lab.setText(String.valueOf(tanvalue));
+    }
+    @FXML
+    void clear(ActionEvent event){
+        num1.setText(" ");
+        num2.setText(" ");
+        lab.setText(" ");
+    }
 
-        double sinvalue = Math.tan(number);
-
-        lab.setText(String.valueOf(sinvalue));
-
+    @FXML
+    void close(ActionEvent event) {
+        System.exit(0);
     }
 
     @Override

@@ -46,7 +46,7 @@
                   </Button>
                </children>
             </Pane>
-            <Button fx:id="Caladdition" layoutX="51.0" layoutY="198.0" mnemonicParsing="false" onAction="#caladdition" prefHeight="38.0" prefWidth="38.0" style="-fx-background-radius: 19;" text="+">
+            <Button id="iphone" fx:id="Caladdition" layoutX="51.0" layoutY="198.0" mnemonicParsing="false" onAction="#caladdition" prefHeight="38.0" prefWidth="38.0" style="-fx-background-radius: 19;" stylesheets="@../style.css" text="+">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -61,20 +61,20 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button id="ipad_d" fx:id="calsin" layoutX="27.0" layoutY="281.0" mnemonicParsing="false" onAction="#calsin" prefHeight="48.0" prefWidth="53.0" stylesheets="@../style.css" text="SIN">
+            <Button id="ipad_d" fx:id="calsin" layoutX="21.0" layoutY="307.0" mnemonicParsing="false" onAction="#calsin" prefHeight="48.0" prefWidth="53.0" stylesheets="@../style.css" text="SIN">
                <font>
                   <Font size="4.0" />
                </font></Button>
-            <Button id="ipad_d" fx:id="calexp" layoutX="220.0" layoutY="281.0" mnemonicParsing="false" onAction="#calexp" prefHeight="48.0" prefWidth="57.0" stylesheets="@../style.css" text="EXP">
+            <Button id="ipad_d" fx:id="calexp" layoutX="214.0" layoutY="307.0" mnemonicParsing="false" onAction="#calexp" prefHeight="48.0" prefWidth="57.0" stylesheets="@../style.css" text="EXP">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>
-            <Button id="ipad_d" fx:id="caltan" layoutX="93.0" layoutY="281.0" mnemonicParsing="false" onAction="#calcos" prefHeight="48.0" prefWidth="52.0" stylesheets="@../style.css" text="COS">
+            <Button id="ipad_d" fx:id="caltan" layoutX="87.0" layoutY="307.0" mnemonicParsing="false" onAction="#calcos" prefHeight="48.0" prefWidth="52.0" stylesheets="@../style.css" text="COS">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button id="ipad_d" fx:id="caltan" layoutX="155.0" layoutY="281.0" mnemonicParsing="false" onAction="#caltan" prefHeight="48.0" prefWidth="52.0" stylesheets="@../style.css" text="TAN">
+            <Button id="ipad_d" fx:id="caltan" layoutX="149.0" layoutY="307.0" mnemonicParsing="false" onAction="#caltan" prefHeight="48.0" prefWidth="52.0" stylesheets="@../style.css" text="TAN">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -84,6 +84,11 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
+            <Button id="ipad_g" fx:id="clear" layoutX="93.0" layoutY="253.0" mnemonicParsing="false" onAction="#clear" prefHeight="30.0" prefWidth="99.0" style="-fx-background-radius: 50;" stylesheets="@../style.css" text="Clear">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>
