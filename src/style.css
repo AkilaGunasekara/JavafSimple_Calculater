@@ -17,7 +17,14 @@
     -fx-font-weight: bold;
 
 }
+#ipad_d:hover{
+    -fx-text-fill: #284795;
 
+}
+#ipad_d:pressed{
+    -fx-text-fill: #182a61;
+
+}
 #ipad_d Text {
     -fx-effect: dropshadow( one-pass-box , black , 0, 0.0 , 0 , -1 );
 }
@@ -38,4 +45,8 @@
 }
 #ipad_g Text {
     -fx-effect: dropshadow(one-pass-box, white, 0, 0.0, 0, 1);
+}
+#ipad_g:hover{
+    -fx-text-fill: #f10639;
+
 }

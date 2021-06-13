@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="300.0" style="-fx-background-color: #178ecb; -fx-opacity: 10; visibility: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="300.0" style="-fx-background-color: #178ecb;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Pane fx:id="calexp" layoutX="3.0" layoutY="4.0" prefHeight="380.0" prefWidth="294.0" style="-fx-background-color: #949191;">
          <children>
-            <Pane layoutX="15.0" layoutY="14.0" prefHeight="59.0" prefWidth="265.0" style="-fx-background-color: #b0b8b2; -fx-background-radius: 15; -fx-opacity: 20; -fx-border-color: #178ecb; -fx-border-radius: 15;">
+            <Pane layoutX="15.0" layoutY="14.0" prefHeight="59.0" prefWidth="265.0" style="-fx-background-color: #b0b8b2; -fx-background-radius: 15; -fx-border-color: #178ecb; -fx-border-radius: 15;">
                <children>
-                  <Label id="label" fx:id="lab" layoutX="10.0" layoutY="-1.0" prefHeight="62.0" prefWidth="247.0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                  <Label id="label" fx:id="lab" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="-1.0" prefHeight="62.0" prefWidth="247.0" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS" wrapText="true">
                      <font>
                         <Font size="42.0" />
                      </font>
@@ -32,7 +32,7 @@
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
-            <Pane layoutX="37.0" layoutY="188.0" prefHeight="59.0" prefWidth="227.0" style="-fx-background-color: #787575; -fx-background-radius: 15; -fx-opacity: 20; -fx-border-color: #178ecb; -fx-border-radius: 15;">
+            <Pane layoutX="37.0" layoutY="188.0" prefHeight="59.0" prefWidth="227.0" style="-fx-background-color: #787575; -fx-background-radius: 15; -fx-border-color: #178ecb; -fx-border-radius: 15;">
                <children>
                   <Label id="label" fx:id="lab1" layoutX="65.0" prefHeight="62.0" prefWidth="149.0">
                      <font>
@@ -84,7 +84,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Button id="ipad_g" fx:id="clear" layoutX="93.0" layoutY="253.0" mnemonicParsing="false" onAction="#clear" prefHeight="30.0" prefWidth="99.0" style="-fx-background-radius: 50;" stylesheets="@../style.css" text="Clear">
+            <Button id="ipad_g" fx:id="clearb" layoutX="93.0" layoutY="253.0" mnemonicParsing="false" onAction="#clearb" prefHeight="30.0" prefWidth="99.0" style="-fx-background-radius: 50;" stylesheets="@../style.css" text="Clear">
                <font>
                   <Font size="6.0" />
                </font>

@@ -19,8 +19,12 @@ public class Controller implements Initializable {
     @FXML
     private TextField num2;
 
+//...............................................................................................................
+    // For Addition
+
     @FXML
     public void caladdition(ActionEvent event){
+        num2.setDisable(false);
 
         try {
             float number1 = Float.parseFloat(num1.getText());
@@ -34,6 +38,9 @@ public class Controller implements Initializable {
         }
 
     }
+//...............................................................................................................
+    // For Subtraction
+
     @FXML
     void calculatereduce(ActionEvent event){
 
@@ -49,6 +56,8 @@ public class Controller implements Initializable {
         }
     }
 
+//...............................................................................................................
+    // For Multiplication
 
     @FXML
     void calculatemultification(ActionEvent event){
@@ -64,6 +73,9 @@ public class Controller implements Initializable {
             lab.setText(" ");
         }
     }
+
+    //...............................................................................................................
+    // For Division
     @FXML
     void calculatedivision(ActionEvent event){
 
@@ -78,51 +90,103 @@ public class Controller implements Initializable {
             lab.setText(" ");
         }
     }
+
+    //...............................................................................................................
+    // For Sin
     @FXML
     void calsin(ActionEvent event){
-        double number = Integer.parseInt(num1.getText());
-        number = Math.toRadians(number);
-        double sinvalue = Math.sin(number);
+        try {
+            double number = Integer.parseInt(num1.getText());
+            number = Math.toRadians(number);
+            double sinvalue = Math.sin(number);
+            num2.setDisable(true);
+            lab.setText(String.valueOf(sinvalue));
+        }
+        catch (Exception e){
+            num1.setText(num1.getText());
+            num2.setText("▲");
+            num2.setDisable(true);
+            lab.setText("");
 
-        lab.setText(String.valueOf(sinvalue));
+        }
+//...............................................................................................................
+        // For Exp
 
-    }
+        }
     @FXML
-    void calexp(ActionEvent event){
-        double number = Integer.parseInt(num1.getText());
-        number = Math.toRadians(number);
-        double expvalue = Math.exp(number);
+    void calexp(ActionEvent event) {
+        try {
+            double number = Integer.parseInt(num1.getText());
+            number = Math.toRadians(number);
+            num2.setDisable(true);
+            double expvalue = Math.exp(number);
 
-        lab.setText(String.valueOf(expvalue));
+            lab.setText(String.valueOf(expvalue));
 
+        } catch (Exception e) {
+            num1.setText(num1.getText());
+            num2.setText("▲");
+            num2.setDisable(true);
+            lab.setText("");
+
+        }
     }
-    @FXML
+    //...............................................................................................................
+    // For Cos
+        @FXML
     void calcos(ActionEvent event){
+            try {
         double number = Integer.parseInt(num1.getText());
         number = Math.toRadians(number);
         double cosvalue = Math.cos(number);
-
+        num2.setDisable(true);
         lab.setText(String.valueOf(cosvalue));
 
     }
+
+        catch (Exception e) {
+        num1.setText(num1.getText());
+        num2.setText("▲");
+        num2.setDisable(true);
+        lab.setText("");
+
+    }
+    }
+    //...............................................................................................................
+    // For Tan
     @FXML
     void caltan(ActionEvent event){
+        try {
         double number = Integer.parseInt(num1.getText());
         number = Math.toRadians(number);
         double tanvalue = Math.tan(number);
+        num2.setDisable(true);
         lab.setText(String.valueOf(tanvalue));
     }
-    @FXML
-    void clear(ActionEvent event){
+        catch (Exception e) {
+            num1.setText(num1.getText());
+            num2.setText("▲");
+            num2.setDisable(true);
+            lab.setText("");
+
+        }
+    }
+    //...............................................................................................................
+    // For Clear
+    public void clearb(ActionEvent event){
+    try{
+
         num1.setText(" ");
         num2.setText(" ");
         lab.setText(" ");
     }
-
-    @FXML
-    void close(ActionEvent event) {
-        System.exit(0);
+    catch (Exception e){
+        num1.setText(num1.getText());
+        num2.setText(num1.getText());
+        lab.setText(" ");
     }
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
